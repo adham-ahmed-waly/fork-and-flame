@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Fork & Flame in Cairo for questions, table requests, or feedback."
+    />
+    <meta name="theme-color" content="#315c3b" />
+    <title>Contact | Fork &amp; Flame</title>
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <script src="../js/common.js" defer></script>
+    <script src="../js/contact.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Fork &amp; Flame</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="visually-hidden">Menu</span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a class="nav-cart" href="cart.html">
+            Cart
+            <span id="cart-count" class="cart-count" aria-live="polite">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page contact-page">
+      <div class="section-heading">
+        <h1>Contact us</h1>
+        <p>Questions, table requests, or feedback — send a message.</p>
+      </div>
+
+      <form id="contact-form" class="form" novalidate>
+        <div class="form-field">
+          <label for="contact-name">Name</label>
+          <input
+            id="contact-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+            minlength="2"
+          />
+          <p class="field-error" data-error-for="contact-name"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="contact-email">Email</label>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+          <p class="field-error" data-error-for="contact-email"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="contact-message">Message</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="5"
+            required
+            minlength="10"
+          ></textarea>
+          <p class="field-error" data-error-for="contact-message"></p>
+        </div>
+
+        <p id="contact-status" class="form-status" role="status"></p>
+        <button class="button" type="submit">Send message</button>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">Fork &amp; Flame</p>
+          <p>Good food. Great moments. A neighborhood kitchen in Garden City.</p>
+        </div>
+        <div>
+          <p class="footer-label">Visit</p>
+          <p>14 Nile Corniche, Garden City, Cairo</p>
+          <p>Sat–Thu 12:00–23:00 · Fri 14:00–00:00</p>
+          <p><a href="tel:+20225550190">+20 2 2555 0190</a></p>
+        </div>
+        <nav aria-label="Footer">
+          <p class="footer-label">Explore</p>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="cart.html">Cart</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 Fork &amp; Flame. Built as a front-end portfolio project.</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+.hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: 72vh;
+  padding: 72px 6% 80px;
+  color: #fff;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(20, 28, 18, 0.25) 0%,
+      rgba(20, 28, 18, 0.78) 100%
+    ),
+    url("../images/hero.jpg") center / cover no-repeat;
+}
+
+.hero-content {
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #dce8d7;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 14ch;
+  margin: 0 0 16px;
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.hero-lead {
+  max-width: 38rem;
+  margin: 0 0 28px;
+  color: #f3f5ee;
+  font-size: 1.12rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero .button-ghost {
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+
+.hero .button-ghost:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1180px;
+  margin: -36px auto 0;
+  padding: 0 6% 48px;
+  position: relative;
+}
+
+.highlights article {
+  padding: 24px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
+}
+
+.highlights h2 {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+}
+
+.highlights p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.home-band {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 12px 6% 64px;
+}
+
+.home-band .section-heading p {
+  max-width: 36rem;
+}
+
+.picks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.pick {
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
+}
+
+.pick img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pick div {
+  padding: 18px 20px 22px;
+}
+
+.pick h3 {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.pick p {
+  margin: 0 0 12px;
+  color: var(--color-muted);
+}
+
+.pick-price {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.home-cta {
+  margin: 28px 0 0;
+}
+
+.visit {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
+  margin: 8px 6% 0;
+  padding: 36px 6%;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: var(--color-primary);
+  color: #f3f5ee;
+}
+
+.visit h2 {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 500;
+}
+
+.visit p {
+  margin: 0 0 18px;
+  max-width: 36rem;
+}
+
+.visit-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.visit-list div {
+  margin: 0;
+}
+
+.visit-list dt {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #dce8d7;
+}
+
+.visit-list dd {
+  margin: 4px 0 0;
+}
+
+.visit a {
+  color: #fff;
+}
+
+.visit .button-ghost {
+  border-color: rgba(255, 255, 255, 0.75);
+  color: #fff;
+}
+
+.visit .button-ghost:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+@media (max-width: 950px) {
+  .highlights,
+  .picks,
+  .visit {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 62vh;
+    padding: 56px 6% 72px;
+  }
+
+  .highlights {
+    margin-top: -28px;
+  }
+}

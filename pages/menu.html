@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse the Fork & Flame menu. Search, filter, and add dishes to your cart."
+    />
+    <meta name="theme-color" content="#315c3b" />
+    <title>Menu | Fork &amp; Flame</title>
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <script src="../js/common.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Fork &amp; Flame</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="visually-hidden">Menu</span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="menu.html" aria-current="page">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="nav-cart" href="cart.html">
+            Cart
+            <span id="cart-count" class="cart-count" aria-live="polite">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <div class="section-heading">
+        <h1>Our menu</h1>
+        <p>Search a dish, filter by category, then add it to your cart.</p>
+      </div>
+
+      <div class="menu-controls">
+        <div class="search-box">
+          <label class="visually-hidden" for="menu-search">Search the menu</label>
+          <input
+            type="search"
+            id="menu-search"
+            placeholder="Search burgers, cola, cake..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="category-buttons" role="group" aria-label="Filter menu by category">
+          <button class="category-filter active" type="button" data-category="all" aria-pressed="true">All</button>
+          <button class="category-filter" type="button" data-category="main" aria-pressed="false">Mains</button>
+          <button class="category-filter" type="button" data-category="dessert" aria-pressed="false">Desserts</button>
+          <button class="category-filter" type="button" data-category="drinks" aria-pressed="false">Drinks</button>
+        </div>
+      </div>
+
+      <p id="menu-results" aria-live="polite"></p>
+
+      <div class="menu-grid">
+        <article class="menu-card" data-category="main">
+          <img src="../images/burger.jpg" alt="Beef burger with cheese, lettuce, and tomato" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Classic Burger</h2>
+            <p class="description">Juicy beef, melted cheese, lettuce, tomato, and house sauce.</p>
+            <p class="price">180 EGP</p>
+            <button class="add-to-cart" type="button" data-id="burger" data-name="Classic Burger" data-price="180">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="main">
+          <img src="../images/pizza.jpg" alt="Margherita pizza with basil" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Margherita Pizza</h2>
+            <p class="description">Tomato sauce, mozzarella, and fresh basil on a thin crust.</p>
+            <p class="price">220 EGP</p>
+            <button class="add-to-cart" type="button" data-id="pizza" data-name="Margherita Pizza" data-price="220">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="main">
+          <img src="../images/ramen.jpg" alt="Bowl of chicken ramen with egg and noodles" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Chicken Ramen</h2>
+            <p class="description">Warm noodles, chicken, egg, and a rich broth.</p>
+            <p class="price">200 EGP</p>
+            <button class="add-to-cart" type="button" data-id="ramen" data-name="Chicken Ramen" data-price="200">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="main">
+          <img src="../images/hot-dog.jpg" alt="Grilled hot dog in a bun" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Classic Hot Dog</h2>
+            <p class="description">Grilled sausage with mustard, ketchup, and onions.</p>
+            <p class="price">120 EGP</p>
+            <button class="add-to-cart" type="button" data-id="hot-dog" data-name="Classic Hot Dog" data-price="120">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="main">
+          <img src="../images/spaghetti.jpg" alt="Spaghetti with tomato sauce" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Spaghetti</h2>
+            <p class="description">Spaghetti tossed in a slow-cooked tomato sauce.</p>
+            <p class="price">170 EGP</p>
+            <button class="add-to-cart" type="button" data-id="spaghetti" data-name="Spaghetti" data-price="170">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="dessert">
+          <img src="../images/chocolate-cake.jpg" alt="Slice of chocolate cake" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Chocolate Cake</h2>
+            <p class="description">Rich chocolate cake with a smooth ganache finish.</p>
+            <p class="price">100 EGP</p>
+            <button class="add-to-cart" type="button" data-id="cake" data-name="Chocolate Cake" data-price="100">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="dessert">
+          <img src="../images/tiramisu.jpg" alt="Tiramisu dessert in a glass" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Tiramisu</h2>
+            <p class="description">Coffee-soaked layers with mascarpone cream.</p>
+            <p class="price">110 EGP</p>
+            <button class="add-to-cart" type="button" data-id="tiramisu" data-name="Tiramisu" data-price="110">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="dessert">
+          <img src="../images/ice-cream.jpg" alt="Ice cream dessert" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Vanilla Ice Cream</h2>
+            <p class="description">Two scoops of vanilla ice cream, served cold.</p>
+            <p class="price">70 EGP</p>
+            <button class="add-to-cart" type="button" data-id="ice-cream" data-name="Vanilla Ice Cream" data-price="70">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+          <img src="../images/cola.jpg" alt="Glass of cola with ice" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Cola</h2>
+            <p class="description">A cold cola over ice.</p>
+            <p class="price">35 EGP</p>
+            <button class="add-to-cart" type="button" data-id="cola" data-name="Cola" data-price="35">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+          <img src="../images/lemonade.jpg" alt="Glass of lemonade" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Lemonade</h2>
+            <p class="description">Fresh lemons, a little sugar, plenty of ice.</p>
+            <p class="price">45 EGP</p>
+            <button class="add-to-cart" type="button" data-id="lemonade" data-name="Lemonade" data-price="45">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+          <img src="../images/orange-juice.jpg" alt="Glass of orange juice" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Orange Juice</h2>
+            <p class="description">Freshly squeezed orange juice.</p>
+            <p class="price">55 EGP</p>
+            <button class="add-to-cart" type="button" data-id="orange-juice" data-name="Orange Juice" data-price="55">Add to cart</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="drinks">
+          <img src="../images/water.jpg" alt="Bottle of drinking water" width="900" height="700" />
+          <div class="menu-card-content">
+            <h2>Bottled Water</h2>
+            <p class="description">Still bottled drinking water, served cold.</p>
+            <p class="price">15 EGP</p>
+            <button class="add-to-cart" type="button" data-id="water" data-name="Bottled Water" data-price="15">Add to cart</button>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">Fork &amp; Flame</p>
+          <p>Good food. Great moments. A neighborhood kitchen in Garden City.</p>
+        </div>
+        <div>
+          <p class="footer-label">Visit</p>
+          <p>14 Nile Corniche, Garden City, Cairo</p>
+          <p>Sat–Thu 12:00–23:00 · Fri 14:00–00:00</p>
+          <p><a href="tel:+20225550190">+20 2 2555 0190</a></p>
+        </div>
+        <nav aria-label="Footer">
+          <p class="footer-label">Explore</p>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="cart.html">Cart</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 Fork &amp; Flame. Built as a front-end portfolio project.</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

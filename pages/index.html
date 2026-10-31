@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fork & Flame is a Cairo restaurant serving burgers, pasta, desserts, and fresh drinks."
+    />
+    <meta name="theme-color" content="#315c3b" />
+    <title>Fork &amp; Flame | Restaurant in Cairo</title>
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <script src="../js/common.js" defer></script>
+    <script src="../js/home.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Fork &amp; Flame</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="visually-hidden">Menu</span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="nav-cart" href="cart.html">
+            Cart
+            <span id="cart-count" class="cart-count" aria-live="polite">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Cairo · Since 2024</p>
+          <h1>Good food. Great moments.</h1>
+          <p class="hero-lead">
+            Burgers, pasta, desserts, and cold drinks cooked fresh — for lunch,
+            dinner, or a quick bite with friends.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="menu.html">Explore the menu</a>
+            <a class="button button-ghost" href="contact.html">Book a table</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights" aria-label="Why visit Fork and Flame">
+        <article>
+          <h2>Cooked to order</h2>
+          <p>Every plate leaves the kitchen when you order it, not before.</p>
+        </article>
+        <article>
+          <h2>Fair prices</h2>
+          <p>A full meal in Cairo without stretching the budget.</p>
+        </article>
+        <article>
+          <h2>Pickup ready</h2>
+          <p>Build a cart online, then collect it at the counter.</p>
+        </article>
+      </section>
+
+      <section class="home-band" aria-labelledby="picks-title">
+        <div class="section-heading">
+          <h2 id="picks-title">Tonight’s picks</h2>
+          <p>
+            A short list from the kitchen. The full menu has mains, desserts,
+            and cold drinks.
+          </p>
+        </div>
+        <div class="picks">
+          <article class="pick">
+            <img
+              src="../images/burger.jpg"
+              alt="Beef burger with cheese, lettuce, and tomato"
+              width="900"
+              height="700"
+            />
+            <div>
+              <h3>Classic Burger</h3>
+              <p>Juicy beef, melted cheese, and house sauce.</p>
+              <p class="pick-price">180 EGP</p>
+            </div>
+          </article>
+          <article class="pick">
+            <img
+              src="../images/spaghetti.jpg"
+              alt="Spaghetti with tomato sauce"
+              width="900"
+              height="700"
+            />
+            <div>
+              <h3>Spaghetti</h3>
+              <p>Tossed in a slow-cooked tomato sauce.</p>
+              <p class="pick-price">170 EGP</p>
+            </div>
+          </article>
+          <article class="pick">
+            <img
+              src="../images/chocolate-cake.jpg"
+              alt="Slice of chocolate cake"
+              width="900"
+              height="700"
+            />
+            <div>
+              <h3>Chocolate Cake</h3>
+              <p>Rich cake with a smooth ganache finish.</p>
+              <p class="pick-price">100 EGP</p>
+            </div>
+          </article>
+        </div>
+        <p class="home-cta">
+          <a class="button" href="menu.html">See the full menu</a>
+        </p>
+      </section>
+
+      <section class="visit" aria-labelledby="visit-title">
+        <div>
+          <h2 id="visit-title">Come sit with us</h2>
+          <p>
+            Walk in for lunch or dinner, or send a note if you want a table by
+            the window. Pickup orders are ready at the counter.
+          </p>
+          <a class="button button-ghost" href="contact.html">Book a table</a>
+        </div>
+        <dl class="visit-list">
+          <div>
+            <dt>Address</dt>
+            <dd>14 Nile Corniche, Garden City, Cairo</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Sat–Thu 12:00–23:00 · Fri 14:00–00:00</dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+20225550190">+20 2 2555 0190</a></dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">Fork &amp; Flame</p>
+          <p>Good food. Great moments. A neighborhood kitchen in Garden City.</p>
+        </div>
+        <div>
+          <p class="footer-label">Visit</p>
+          <p>14 Nile Corniche, Garden City, Cairo</p>
+          <p>Sat–Thu 12:00–23:00 · Fri 14:00–00:00</p>
+          <p><a href="tel:+20225550190">+20 2 2555 0190</a></p>
+        </div>
+        <nav aria-label="Footer">
+          <p class="footer-label">Explore</p>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="cart.html">Cart</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 Fork &amp; Flame. Built as a front-end portfolio project.</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Fork & Flame, a neighborhood kitchen in Garden City, Cairo."
+    />
+    <meta name="theme-color" content="#315c3b" />
+    <title>About | Fork &amp; Flame</title>
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <script src="../js/common.js" defer></script>
+    <script src="../js/about.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="index.html">Fork &amp; Flame</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="visually-hidden">Menu</span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="nav-cart" href="cart.html">
+            Cart
+            <span id="cart-count" class="cart-count" aria-live="polite">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page about-layout">
+      <div class="about-copy">
+        <div class="section-heading">
+          <h1>About Fork &amp; Flame</h1>
+          <p>A neighborhood kitchen in Cairo for people who like honest food.</p>
+        </div>
+        <p>
+          We started Fork &amp; Flame because we wanted a place where you can
+          sit down for a burger, share pasta, and still have room for dessert.
+          The menu is short on purpose: we cook fewer dishes, and we cook them
+          well.
+        </p>
+        <dl class="about-meta">
+          <div>
+            <dt>Address</dt>
+            <dd>14 Nile Corniche, Garden City, Cairo</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Sat–Thu 12:00–23:00 · Fri 14:00–00:00</dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+20225550190">+20 2 2555 0190</a></dd>
+          </div>
+        </dl>
+      </div>
+      <img
+        class="about-photo"
+        src="../images/about.jpg"
+        alt="Plated restaurant meal on a wooden table"
+        width="1200"
+        height="900"
+      />
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">Fork &amp; Flame</p>
+          <p>Good food. Great moments. A neighborhood kitchen in Garden City.</p>
+        </div>
+        <div>
+          <p class="footer-label">Visit</p>
+          <p>14 Nile Corniche, Garden City, Cairo</p>
+          <p>Sat–Thu 12:00–23:00 · Fri 14:00–00:00</p>
+          <p><a href="tel:+20225550190">+20 2 2555 0190</a></p>
+        </div>
+        <nav aria-label="Footer">
+          <p class="footer-label">Explore</p>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="cart.html">Cart</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <p class="footer-copy">&copy; 2026 Fork &amp; Flame. Built as a front-end portfolio project.</p>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
